@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: fantasy;
+}
+header ul {
+  background-color: #fcfb00;
+  height: 11vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .brand {
+  font-size: 40px;
+}
+header .navs {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+header .header-login {
+  display: flex;
+}
+header .header-login li {
+  margin: 0 10px;
+  border: 1px solid black;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.banner {
+  height: 89vh;
+  background-image: url("/proj3/images/Capture.PNG");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner h3 {
+  color: #fcfb00;
+  font-weight: 100;
+  font-size: 50px;
+}
+.banner h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 120px;
+}
+.banner h4 {
+  color: white;
+  font-size: 50px;
+  font-weight: 100;
+}
+.banner span {
+  color: #fcfb00;
+}
+.banner-text {
+  width: 70%;
+  text-align: center;
+}
+.banner-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.banner-button h5 {
+  background-color: #fcfb00;
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0 15px;
+  border-radius: 10px;
+}
+.banner-button #howTo {
+  color: gray;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.trending {
+  padding: 0 10%;
+  background-color: #181c1f;
+}
+.trending button {
+  background-color: #fcfb00;
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.trending p {
+  padding: 10px 0;
+}
+.trending h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 80px;
+}
+.trending-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.trending-detail p {
+  color: gray;
+  font-weight: 100;
+}
+.img-container {
+  position: relative;
+  margin: 10px 0 7% 0;
+}
+.img-container:hover button {
+  opacity: 1;
+}
+.img-container:hover {
+  opacity: 0.5;
+}
+.view-all button {
+  background-color: #fcfb00;
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  transform: translateY(20vh);
+  left: 30%;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+.trending-img {
+  display: flex;
+  justify-content: space-between;
+}
+.trending-img img {
+  height: 35vh;
+  max-width: 100%;
+}
+.welcome-bonus {
+  background-color: #181c1f;
+  padding: 0 10%;
+  position: relative;
+}
+.welcome-bonus-text {
+  background-color: #fcfb00;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.welcome-bonus img {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  transform: translateY(-10vh);
+}
+.welcome-bonus h4 {
+  font-size: 50px;
+  font-weight: 100;
+}
+.welcome-bonus h1 {
+  font-size: 100px;
+  font-weight: 100;
+  padding: 30px 0;
+}
+.welcome-bonus button {
+  max-width: 15%;
+  background-color: black;
+  color: white;
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+}
+#game-providers {
+  padding-top: 5%;
+}
+.carousel-img {
+    display: flex;
+}
+.carousel-img img{
+padding: 0 10px;
+}
+.carousel {
+    padding: 0 10%;
+    background-color: #181c1f;
+}
