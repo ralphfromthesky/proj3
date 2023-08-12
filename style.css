@@ -21,19 +21,40 @@ header .navs {
   justify-content: space-between;
   width: 30vw;
 }
+
 header .header-login {
   display: flex;
 }
-header .header-login li {
+header .header-login button {
   margin: 0 10px;
   border: 1px solid black;
   padding: 12px 25px;
   border-radius: 10px;
   font-size: 20px;
+  background-color: #fcfb00;
+
+}
+.accordion-body {
+  background-color: black;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.accordion-body button {
+  background-color: #fcfb00;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+  margin: 0 1%;
 }
 .banner {
   height: 89vh;
   background-image: url("/proj3/images/Capture.PNG");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,7 +137,7 @@ header .header-login li {
 .img-container:hover button {
   opacity: 1;
 }
-.img-container:hover {
+.img-container img:hover {
   opacity: 0.5;
 }
 .view-all button {
@@ -184,12 +205,68 @@ header .header-login li {
   padding-top: 5%;
 }
 .carousel-img {
-    display: flex;
+  display: flex;
 }
-.carousel-img img{
-padding: 0 10px;
+.carousel-img img {
+  padding: 0 10px;
 }
 .carousel {
-    padding: 0 10%;
-    background-color: #181c1f;
+  padding: 0 10%;
+  background-color: #181c1f;
 }
+/* footer CSS */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 5% 0;
+}
+.footer-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.footer-container h3 {
+  color: white;
+  font-weight: 100;
+
+}
+.footer-container h6 {
+  color: gray;
+  font-weight: 100;
+}
+.footer-link h6:hover {
+  color: #fcfb00;
+  transition: .3s;
+}
+.footer-link button {
+  background-color: #fcfb00;
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+}
+.footer-text {
+  padding: 0 12% 5% 10%;
+  font-weight: 100;
+  color: gray;
+  background-color: black;
+}
+
+.footer-text span {
+  color: #fcfb00;
+}
+.all-rights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 0;
+}
+.all-rights img {
+  height: 30px;
+  color: white;
+  background-color: #fcfb00;
+  border-radius: 50%;
+}
+/* tab CSS */
