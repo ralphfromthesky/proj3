@@ -24,6 +24,7 @@ header .navs {
 
 header .header-login {
   display: flex;
+  align-items: center;
 }
 header .header-login button {
   margin: 0 10px;
@@ -36,10 +37,33 @@ header .header-login button {
 }
 .accordion-body {
   background-color: black;
-  height: 12vh;
-  display: flex;
+}
+
+
+.accordion-body ul{
   justify-content: center;
-  align-items: center;
+  padding: 10px 0;
+}
+.accordion-body li{
+  padding: 0 5px;
+}
+.nav-pills .nav-link {
+color: black;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: transparent !important;
+}
+.slot-carousel {
+  display: flex;
+}
+.slot-carousel-img img{
+  height: 25vh;
+  margin: 0 5px;
+}
+#slotContainer {
+  overflow: hidden;
+  padding: 20px 10%;
+
 }
 .accordion-body button {
   background-color: #fcfb00;
@@ -48,6 +72,26 @@ header .header-login button {
   font-weight: 100;
   border-radius: 10px;
   margin: 0 1%;
+}
+.gameContainer {
+  display: flex;
+}
+.casino-container{
+  position: relative;
+  text-align: center;
+  color: white;
+  background-color: #181c1f;
+}
+.casino-container button{
+  position: absolute;
+  top: 30vh;
+  left: 6vw;
+  background-color: #fcfb00;
+  color: black;
+  border: none;
+}
+.casino-container img{
+  height: 40vh;
 }
 .banner {
   height: 89vh;
@@ -210,7 +254,7 @@ header .header-login button {
 .carousel-img img {
   padding: 0 10px;
 }
-.carousel {
+.footer-carousel {
   padding: 0 10%;
   background-color: #181c1f;
 }
