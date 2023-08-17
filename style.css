@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: fantasy;
 }
+:root {
+  --textColor: ##999999;
+}
+
 header ul {
   background-color: #fcfb00;
   height: 11vh;
@@ -33,37 +37,47 @@ header .header-login button {
   border-radius: 10px;
   font-size: 20px;
   background-color: #fcfb00;
-
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 .accordion-body {
   background-color: black;
 }
-
-
-.accordion-body ul{
+.accordion-body ul {
   justify-content: center;
   padding: 10px 0;
 }
-.accordion-body li{
+.accordion-body li {
   padding: 0 5px;
 }
 .nav-pills .nav-link {
-color: black;
+  color: black;
 }
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-link:hover {
+  color: white !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   background-color: transparent !important;
 }
 .slot-carousel {
   display: flex;
 }
-.slot-carousel-img img{
+.game-button-slide {
+  display: flex;
+  justify-content: center;
+}
+.slot-carousel-img img {
   height: 25vh;
   margin: 0 5px;
+  transition: 0.3s ease-in;
 }
+
 #slotContainer {
   overflow: hidden;
   padding: 20px 10%;
-
 }
 .accordion-body button {
   background-color: #fcfb00;
@@ -71,18 +85,19 @@ color: black;
   font-size: 20px;
   font-weight: 100;
   border-radius: 10px;
-  margin: 0 1%;
+  margin-bottom: 1%;
 }
+
 .gameContainer {
   display: flex;
 }
-.casino-container{
+.casino-container {
   position: relative;
   text-align: center;
   color: white;
   background-color: #181c1f;
 }
-.casino-container button{
+.casino-container button {
   position: absolute;
   top: 30vh;
   left: 6vw;
@@ -90,8 +105,53 @@ color: black;
   color: black;
   border: none;
 }
-.casino-container img{
+.casino-container img {
   height: 40vh;
+}
+.logIn {
+  display: flex;
+  justify-content: end;
+  background-color: #fcfb00;
+}
+.loginContainer {
+  display: flex;
+  border: 2px solid #fcfb00;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.loginContainer img{
+  height: 50vh;
+  max-width: 100%;
+}
+
+form {
+  color: black;
+  margin: 20px;
+  width: 15vw;
+}
+form button {
+  background-color: #fcfb00;
+  border: 1px solid black;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10%;
+}
+.input-container {
+  margin: 5% 0;
+}
+input {
+  background-color: rgb(61, 59, 59) !important;
+  color: white !important;
+}
+input .focus {
+  border: 2px solid black;
+}
+label {
+  margin-bottom: 10px;
 }
 .banner {
   height: 89vh;
@@ -102,6 +162,19 @@ color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+.banner .bx {
+  color: #fcfb00;
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-75px);
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #fcfb00;
+  border-radius: 5px;
 }
 .banner h3 {
   color: #fcfb00;
@@ -273,7 +346,6 @@ color: black;
 .footer-container h3 {
   color: white;
   font-weight: 100;
-
 }
 .footer-container h6 {
   color: gray;
@@ -281,7 +353,7 @@ color: black;
 }
 .footer-link h6:hover {
   color: #fcfb00;
-  transition: .3s;
+  transition: 0.3s;
 }
 .footer-link button {
   background-color: #fcfb00;
@@ -313,4 +385,22 @@ color: black;
   background-color: #fcfb00;
   border-radius: 50%;
 }
-/* tab CSS */
+/* aboutUs.html CSS */
+.aboutUs {
+  background-color: black;
+  color: gray;
+  font-weight: 100;
+  padding: 1% 15%;
+}
+.aboutUs h1 {
+  color: white;
+  font-size: 10rem;
+}
+.aboutUs h3 {
+  color: white;
+  font-size: 3rem;
+  margin: 3% 0;
+}
+.aboutUs p {
+  font-size: 20px;
+}
