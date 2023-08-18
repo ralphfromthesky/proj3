@@ -108,17 +108,47 @@ a {
 .casino-container img {
   height: 40vh;
 }
+/* form css */
 .logIn {
   display: flex;
-  justify-content: end;
   background-color: #fcfb00;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.signUpText {
+  margin-top: 5%;
 }
 .loginContainer {
   display: flex;
-  border: 2px solid #fcfb00;
   border-radius: 5px;
   margin-right: 20px;
 }
+.loginImgCarousel img {
+  height: 50vh;
+}
+.carousel-item-flex {
+  display: flex;
+  align-items: center;
+}
+
+#logins {
+  position: absolute;
+  right: 0;
+}
+#registers {
+  position: absolute;
+  right: 0;
+}
+.fade-element {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
 .loginContainer img{
   height: 50vh;
   max-width: 100%;
@@ -129,6 +159,7 @@ form {
   margin: 20px;
   width: 15vw;
 }
+
 form button {
   background-color: #fcfb00;
   border: 1px solid black;
@@ -153,6 +184,7 @@ input .focus {
 label {
   margin-bottom: 10px;
 }
+/* banner */
 .banner {
   height: 89vh;
   background-image: url("/proj3/images/Capture.PNG");
