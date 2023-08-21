@@ -4,6 +4,23 @@
   box-sizing: border-box;
   font-family: fantasy;
 }
+.app-container {
+  position: relative;
+}
+.arrow {
+opacity: 0;
+transition: .2s ease-in;
+}
+.app-container .arrow {
+  font-size: 50px;
+  padding: 5px;
+  border: 1px solid #fcfb00;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 15%;
+  right: 1%;
+  cursor: pointer;
+}
 :root {
   --textColor: ##999999;
 }
@@ -130,6 +147,9 @@ a {
 .carousel-item-flex {
   display: flex;
   align-items: center;
+}
+.carousel-item-flex h1 {
+  font-size: 4rem;
 }
 
 #logins {
