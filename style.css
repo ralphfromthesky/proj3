@@ -8,8 +8,8 @@
   position: relative;
 }
 .arrow {
-opacity: 0;
-transition: .2s ease-in;
+  opacity: 0;
+  transition: 0.2s ease-in;
 }
 .app-container .arrow {
   font-size: 50px;
@@ -169,7 +169,7 @@ a {
   opacity: 1;
 }
 
-.loginContainer img{
+.loginContainer img {
   height: 50vh;
   max-width: 100%;
 }
@@ -177,7 +177,7 @@ a {
 form {
   color: black;
   margin: 20px;
-  width: 15vw;
+  /* width: 15vw; */
 }
 
 form button {
@@ -455,4 +455,226 @@ label {
 }
 .aboutUs p {
   font-size: 20px;
+}
+@media screen and (max-width: 820px) {
+  header ul {
+    justify-content: space-between;
+    padding: 0;
+  }
+  header .navs {
+    width: 100vw;
+  }
+  header .header-login button {
+    white-space: nowrap;
+  }
+  .gameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .casino-container img {
+    height: 27vh;
+  }
+  .casino-container button {
+    top: 20vh;
+    left: 10vw;
+  }
+  #slotContainer img {
+    height: 22vh;
+  }
+  #slotContainer {
+    height: 25vh;
+    padding: 0;
+    margin: 0;
+  }
+  .trending-img img {
+    height: 24vh;
+  }
+  .welcome-bonus h1, h4, button {
+  z-index: 1;
+  }
+  .welcome-bonus img {
+  top: 10vh;
+  height: 60vh;
+  }
+  header li {
+    margin: 0 5px;
+    white-space: nowrap;
+  }
+  .loginContainer {
+    align-items: center;
+  }
+  .loginContainer img {
+    height: 40svh;
+  }
+  .carousel-item-flex h1 {
+    font-size: 3rem;
+  }
+  .loginImgCarousel img {
+    height: 29vh;
+  }
+  .logIn {
+    height: 65vh;
+  }
+  #logins {
+    bottom: -5vh;
+    right: 10vw;
+  }
+  #registers {
+    bottom: -2vh;
+    right: 10vw;
+  }
+  .footer-link button {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .banner h1,
+  .banner h4 {
+    font-size: 1rem;
+  }
+  .banner {
+  height: 59vh;
+  }
+  header .brand {
+    font-size: 30px;
+  }
+  .loginContainer img {
+    height: 30vh;
+  }
+  .loginImgCarousel img {
+    height: 22vh;
+  }
+  .carousel-item-flex h1 {
+    font-size: 1.5rem;
+  }
+  #logins {
+    bottom: -2vh;
+  }
+  #registers {
+    bottom: -2vh;
+  }
+
+  .logIn {
+    height: 65vh;
+  }
+  form button {
+    margin-top: 0;
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 18vh;
+    padding: 20px 10px 0 10px;
+  }
+  header .navs {
+    width: 100%;
+  }
+  .accordion-body button {
+    padding: 10px 15px;
+  }
+  .casino-container img {
+    height: 18vh;
+  }
+  .banner .bx {
+    display: hidden !important;
+    opacity: 0;
+  }
+  .gameContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .slot-carousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100vw;
+  }
+  .slot-carousel-img img {
+    height: 13vh;
+  }
+  #slotContainer {
+    padding: 0;
+    margin: 0;
+  }
+
+  .casino-container button {
+    top: 13vh;
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+  .trending h1 {
+    font-size: 3rem;
+  }
+  .welcome-bonus h1, h4, button {
+    z-index: 1;
+    }
+    .welcome-bonus button {
+      white-space: nowrap;
+      max-width: 35%;
+    }
+    .welcome-bonus-text {
+   height: 50vh;
+    }
+  .welcome-bonus h1 {
+    font-size: 30px;
+  }
+  .welcome-bonus img {
+    height: 40vh;
+    top: 20vh;
+  }
+  .trending button {
+    padding: 0;
+    white-space: nowrap;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-link button {
+    white-space: nowrap;
+  }
+  .banner-button h5 {
+    white-space: nowrap;
+    font-size: 15px;
+  }
+  .trending-img img {
+    height: 12vh;
+    margin: 0 10px;
+  }
+  .carousel-img img {
+    height: 10vh;
+  }
+
+
+}
+@media screen and (max-width: 375px) {
+  #logins {
+    bottom: -5vh;
+  }
+  #registers {
+    bottom: -3vh;
+  }
+  .logIn {
+    height: 75vh;
+  }
+  .loginContainer img {
+    height: 35vh;
+  }
+  .loginImgCarousel img {
+    height: 27vh;
+  }
+  header ul {
+    height: 25vh;
+    padding-bottom: 0px;
+  }
+  form h1 {
+    white-space: nowrap;
+  }
+  .welcome-bonus h4 {
+    font-size: 30px;
+  }
 }
