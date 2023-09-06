@@ -533,6 +533,16 @@ label {
   .banner h4 {
     font-size: 1rem;
   }
+  
+  .aboutUs h1 {
+    font-size: 2rem;
+  }
+  .aboutUs h3 {
+    font-size: 1.5rem;
+  }
+  .aboutUs p {
+    font-size: 15px;
+  }
   .banner {
   height: 59vh;
   }
@@ -543,10 +553,10 @@ label {
     height: 30vh;
   }
   .loginImgCarousel img {
-    height: 22vh;
+    height: 20vh;
   }
   .carousel-item-flex h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #logins {
     bottom: -2vh;
@@ -605,7 +615,7 @@ label {
     padding: 5px 15px;
   }
   .trending h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .welcome-bonus h1, h4, button {
     z-index: 1;
@@ -629,6 +639,7 @@ label {
     white-space: nowrap;
     border-radius: 10px;
     padding: 10px;
+    display: none;
   }
   .footer-container {
     display: grid;
